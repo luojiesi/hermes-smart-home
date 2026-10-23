@@ -1,0 +1,24 @@
+name: smart-home
+version: 1.0.0
+description: "Home device control tools: Tesla (Fleet API), TP-Link Tapo, LG webOS TV, Sonos, Rheem EcoNet water heater. Config in <HERMES_HOME>/smart_home/*.yaml."
+author: Jiesi Luo
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - tesla
+  - tapo
+  - lgtv
+  - sonos
+  - rheem
+requires_env:
+  - TAPO_EMAIL
+  - TAPO_PASSWORD
+  - RHEEM_EMAIL
+  - RHEEM_PASSWORD
+python_dependencies:
+  - "requests>=2.28,<3"
+  - "PyYAML>=6,<7"
+  - "python-kasa>=0.10,<0.11"
+  - "pywebostv>=0.8.9,<0.9"
+  - "wakeonlan>=3,<4"
+  - "soco>=0.30,<0.31"
+  - "pyeconet>=0.2,<0.3"
